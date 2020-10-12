@@ -4,7 +4,9 @@ body,p,span{
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Rubik', sans-serif;
 }
-
+img{
+    max-width: 100%;
+}
 /* Default button*/
 .btn-primary{
     background-color: #e73c3e !important;
@@ -39,9 +41,6 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 /*Header Menu */
-.slider-section{
-   
-}
 .my-menu li{
     /* Dropdown Menu */
     position: relative;
@@ -226,4 +225,76 @@ h1,h2,h3,h4,h5,h6,a{
     padding: 0 .9rem;
     color: #111111;
     font-size: 1.2rem;
+}
+
+/* Logo section */
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.client-logo ul{
+    list-style-type: none;
+}
+
+/* About */
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    background: url(img/shape.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img-text h2{
+    color: #e73c3e;
+    font-size: 4.4rem;
+}
+.about-img-text p{
+    color: #111111;
+    font-weight: 500;
+}
+
+.about-text{}
+.finix-text span{
+    color: #e73c3e;
+}
+.finix-text h3{
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.finix-text p{  
+    font-size: 16px;  
+    color: #606060;
+    line-height: 1.8;
+}
+.finix-text strong{
+    font-size: 18px;
+    color: #606060;
+    font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.finix-text ul li{
+    padding: 5px 0;
+    color: #606060;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: #e73c3e;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
 }
