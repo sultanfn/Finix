@@ -7,6 +7,12 @@ h1,h2,h3,h4,h5,h6,a{
 img{
     max-width: 100%;
 }
+.bg-gray{
+    background-color: #f9fafb
+}
+p{
+    color: #606060;
+}
 /* Default button*/
 .btn-primary{
     background-color: #e73c3e !important;
@@ -192,7 +198,6 @@ img{
     margin: .7rem 0 1rem;
 }
 .slider-content p{
-    color: #606060;
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1.9rem;
@@ -234,6 +239,10 @@ img{
 .client-logo ul{
     list-style-type: none;
 }
+.ptb100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 /* About */
 .about-image{
@@ -264,7 +273,7 @@ img{
 .finix-text span{
     color: #e73c3e;
 }
-.finix-text h3{
+.finix-text h2{
     font-size: 36px;
     font-weight: 400;
     margin-top: 10px;
@@ -272,7 +281,6 @@ img{
 }
 .finix-text p{  
     font-size: 16px;  
-    color: #606060;
     line-height: 1.8;
 }
 .finix-text strong{
@@ -296,4 +304,145 @@ img{
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
+<<<<<<< Updated upstream
+=======
+}
+/* Why Choose Us */
+.finix-text{
+    position: relative;
+}
+.play-animation-btn{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: inline-block;
+    font-size: 55px;
+    text-align: center;
+    line-height: 80px;
+    color: #e73c3e;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    position: absolute;
+    right: 185px;
+    bottom: 55px;
+}
+.play-animation-btn::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e73c3e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #e73c3e;
+    animation: playbtn 1s ease-out infinite;
+    -webkit-animation: playbtn 1.6s ease-out infinite;
+}
+.play-animation-btn:hover{
+    color: #fff;
+    background-color: #e73c3e;
+}
+@keyframes playbtn{
+    0%, 30%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        opacity: 1;
+}
+    50%{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        opacity: .7;
+}
+    100%{
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        opacity: 0;
+}
+}
+
+
+.mtop{
+    margin-top: -24px;
+}
+.feature-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.feature-item:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.feature-item::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -140px;
+    margin: auto;
+    height: 65%;
+    width: 90%;
+    background-color: #fdebeb;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.feature-item .ft-icon{
+    position: relative;
+    z-index: 1;
+}
+.feature-item .ft-icon i{
+    color: #e73c3e;
+    font-size: 2rem;
+    background: #fff;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+} 
+.feature-item:hover .ft-icon i{
+    background-color: #e73c3e;
+    color: #fff;
+>>>>>>> Stashed changes
 }
