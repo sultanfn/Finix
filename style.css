@@ -13,6 +13,9 @@ img{
 p{
     color: #606060;
 }
+.ptb100{
+    padding: 100px 0;
+}
 /* Default button*/
 .btn-primary{
     background-color: #e73c3e !important;
@@ -239,10 +242,6 @@ p{
 .client-logo ul{
     list-style-type: none;
 }
-.ptb100{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
 
 /* About */
 .about-image{
@@ -304,8 +303,6 @@ p{
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
-<<<<<<< Updated upstream
-=======
 }
 /* Why Choose Us */
 .finix-text{
@@ -444,5 +441,94 @@ p{
 .feature-item:hover .ft-icon i{
     background-color: #e73c3e;
     color: #fff;
->>>>>>> Stashed changes
+}
+
+/* Apply Now CSS */
+.apply-now-left h3{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.step-timeline ul{
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+}
+.step-timeline ul::before{
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 21px;
+    width: 1px;
+    background: #e73c3e;
+    height: calc(100% - 100px);
+}
+.step-timeline ul li{
+    margin-bottom: 25px;
+    position: relative;
+}
+.step-timeline ul li::before{
+    content: attr(data-count);
+    position: absolute;
+    top: 5px;
+    left: -65px;
+    height: 40px;
+    width: 40px;
+    background-color: #f9fafb;
+    border: 1px solid #e73c3e;
+    line-height: 40px;
+    text-align: center;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    font-size: 24px;
+    color: #e73c3e;
+}
+.step-timeline ul li strong{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.calculate-rate{
+    background-color: #fdebeb;
+    padding: 50px 45px;
+}
+.calculate-rate .finix-text span{
+    color: #606060;
+}
+.calculate-rate .finix-text h3{
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.calculate-form .form-group{
+    margin-bottom: 16px;
+}
+.calculate-form .form-group input{
+    border: none;
+    padding: 14px 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.calculate-form .form-group select{
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+
+    height: 53px;
+}
+.calculate-form .form-group label{
+    color: #606060;
 }
