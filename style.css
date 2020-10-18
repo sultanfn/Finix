@@ -1,4 +1,4 @@
-body,p,span{
+body,p,span,strong{
     font-family: 'Roboto', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,a{
@@ -589,4 +589,123 @@ p{
     color: #e73c3e;
     font-size: 39px;
     margin-right: 30px;
+}
+
+/* Service section */
+.service-item{
+    border-bottom: 1px solid #cbcbcc;
+    padding-bottom: 30px;
+    position: relative;
+}
+.service-item::before{
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    top: 88%;
+    right: 0;
+
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #111;
+    border: 1px solid #cbcbcc;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+}
+.service-item::after{
+    content: '\f060';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    top: 88%;
+    left: 0;
+
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #111;
+    border: 1px solid #cbcbcc;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+}
+.service-item li{
+    flex: 1 1 auto;
+}
+.service-item li a.active span i{
+    color: #e73c3e;
+}
+.service-item li a.active{
+    position: relative;
+}
+.service-item li a.active::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #e73c3e;
+    position: absolute;
+    top: 166px;
+    left: 0;
+}
+.service-item li a span i{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background: #fff;
+    color: #606060;
+    font-size: 40px;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.service-item li a strong{
+    display: block;
+    color: #111;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.service-item-text h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.service-item-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.service-item-text ul li{
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.service-item-text ul li::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #e73c3e;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
