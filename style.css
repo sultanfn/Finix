@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body,p,span,strong{
     font-family: 'Roboto', sans-serif;
 }
@@ -941,32 +944,65 @@ p{
 }
 
 /* Top Arrow */
-.go-top{
+.to-top{
     position: fixed;
     cursor: pointer;
-    bottom: 0;
+    bottom: 10px;
     right: 20px;
     height: 45px;
     width: 45px;
     line-height: 45px;
     background: #111;
     text-align: center;
+    color: #fff;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-
-
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
 }
-.go-top a{
-    color: #fff;
-}
-.go-top.active{
+.to-top.active{
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+}
+
+/* Other Css  */
+/* contact.html CSS */
+.header-breadcrumb{
+    padding: 120px 0;
+    background-image: url(img/bg.jpg);
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.header-breadcrumb::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+.breadcrumb-item.active {
+    color: #606060;
+    font-weight: 500;
+}
+.breadcrumb a{
+        color: #e73c3e;
+        text-decoration: none;
+    
 }
